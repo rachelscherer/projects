@@ -382,9 +382,9 @@ void Chess::makeMove(int x1, int y1, int x2, int y2, char x2Ch){
     
     //If it's a valid move, add pieces to pieceBank.
     if(oppTurn && temp!=0){
-        pieceBank[1].push(pieces[temp-1]->getRepVal());
+        pieceBank[1].push_back(pieces[temp-1]->getRepVal());
     } else if(!oppTurn && temp!=0){
-        pieceBank[0].push(pieces[temp-1]->getRepVal());
+        pieceBank[0].push_back(pieces[temp-1]->getRepVal());
     }
     
     //Clear the possibleMoves vector and redraw the board
@@ -571,8 +571,8 @@ void Chess::displayPieceBank(){
     cout << "\nPlayer 1's captured pieces:\n";
     if(pieceBank[0].empty()) cout << "Nothing yet!\n";
     else{
-        for(int i=0;i<pieceBank[0].getSize();i++){
-            cout << pieces[pieceBank[0][i]]->getName() << "\n";
+        for(vector<int>::iterator it = pieceBank[0].begin(); it!= pieceBank[0].end(); ++it){
+            cout << *it << "\n";
         }
     }
     
@@ -580,8 +580,8 @@ void Chess::displayPieceBank(){
     if(pieceBank[1].empty()) cout << "Nothing yet!\n";
     else{
         //Iterate through pieceBank[1] vector
-        for(int i=0;i<pieceBank[1].getSize();i++){
-            cout << pieces[pieceBank[1][i]]->getName() << "\n";
+        for(vector<int>::iterator it = pieceBank[1].begin(); it!= pieceBank[1].end(); ++it){
+            cout << *it << "\n";
         }
     }
     cout << "\n";

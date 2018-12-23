@@ -39,7 +39,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Chess.o \
 	${OBJECTDIR}/King.o \
 	${OBJECTDIR}/Knight.o \
-	${OBJECTDIR}/MyVector.o \
 	${OBJECTDIR}/Pawn.o \
 	${OBJECTDIR}/Piece.o \
 	${OBJECTDIR}/Queen.o \
@@ -90,11 +89,6 @@ ${OBJECTDIR}/Knight.o: Knight.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Knight.o Knight.cpp
-
-${OBJECTDIR}/MyVector.o: MyVector.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MyVector.o MyVector.cpp
 
 ${OBJECTDIR}/Pawn.o: Pawn.cpp
 	${MKDIR} -p ${OBJECTDIR}

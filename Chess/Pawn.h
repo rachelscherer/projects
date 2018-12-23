@@ -13,19 +13,19 @@
 class Pawn:public Piece{
 private:
     const string name = "Pawn";
-    bool enPassant;
+    //bool enPassant;
 public:
     //Constructor
-    Pawn(int repVal):Piece(repVal){enPassant = false;}
+    Pawn(int repVal):Piece(repVal){}
     
     //Destructor
     ~Pawn(){}
     
     //Getters
-    bool getEnPassant();
+    //bool getEnPassant();
     
     //Setters
-    void setEnPassant();
+    //void setEnPassant();
     
     string getName(){return name;}
     void getPossibleMoves(int (&board)[8][8], bool check[], vector<int>& possibleMoves, bool& kPresent);

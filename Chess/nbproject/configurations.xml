@@ -14,7 +14,6 @@
         <itemPath>Rook.h</itemPath>
       </logicalFolder>
       <itemPath>Chess.h</itemPath>
-      <itemPath>MyVector.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -28,7 +27,6 @@
         <itemPath>Rook.cpp</itemPath>
       </logicalFolder>
       <itemPath>Chess.cpp</itemPath>
-      <itemPath>MyVector.cpp</itemPath>
       <itemPath>Piece.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -69,10 +67,6 @@
       <item path="Knight.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Knight.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="MyVector.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="MyVector.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Pawn.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -128,10 +122,6 @@
       <item path="Knight.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Knight.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="MyVector.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="MyVector.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Pawn.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -40,8 +40,8 @@ void Pawn::getPossibleMoves(int (&board)[8][8], bool check[], vector<int>& possi
     }
 }
 
-bool Pawn::getEnPassant(){return enPassant;}
+//bool Pawn::getEnPassant(){return enPassant;}
 
-void Pawn::setEnPassant(bool enPassant){
-    this->enPassant = enPassant;
-}
+//void Pawn::setEnPassant(bool enPassant){
+//    this->enPassant = enPassant;
+//}

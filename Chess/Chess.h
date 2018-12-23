@@ -13,11 +13,6 @@
 #include "Rook.h"
 #include "Pawn.h"
 
-//I'm including both <vector> and "Vector.h" as this program built pretty heavily
-//using iterators and nothing wants to play nice with my simple vector class.
-//However, pieceBank[] can use it so it's included!
-#include "MyVector.h"
-
 //System Libraries
 #include <string>
 #include <iostream>
@@ -35,7 +30,7 @@ private:
     Piece** pieces;                         //Array of chess pieces
     int board[8][8];                        //Stores where the pieces are on the board
     vector<int> possibleMoves;              //Stores location a given piece can move to
-    MyVector pieceBank[2];                  //Captured pieces go here
+    vector<int> pieceBank[2];                  //Captured pieces go here
     vector<string> moveHistory;             //Contains a history of every move in the game
     int turnNumber;                         //Counts how many turns have passed
     
